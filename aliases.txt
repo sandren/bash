@@ -1,0 +1,60 @@
+# Directory aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ws='cd /etc/nginx'
+alias wr='cd /var/www'
+alias md='mkdir -p'
+alias rd='rmdir'
+alias ls='ls -hF --color=auto --group-directories-first'
+alias la='ls -hFA --color=auto --group-directories-first'
+alias ll='ls -hFAl --color=auto --group-directories-first'
+
+# Apt aliases
+alias update='sudo apt update && sudo apt upgrade -y'
+alias autoremove='sudo apt autoremove --purge -y"
+
+# Program aliases
+alias n='nano'
+alias sn='sudo nano'
+alias m='micro'
+alias sm='sudo micro'
+alias t='touch'
+alias st='sudo touch'
+alias tar='tar -zcvf'
+alias untar='tar -zxvf'
+alias wget='wget -c'
+alias ping='ping -c 5'
+alias top='htop'
+
+# Git aliases
+alias add='sudo git add .'
+alias branch='sudo git branch'
+alias checkout='sudo git checkout'
+alias clone='sudo git clone'
+alias commit='sudo git commit -m'
+alias pull='sudo git pull'
+alias push='sudo git push origin master'
+alias reset='sudo git reset'
+alias status='sudo git status'
+
+# Tmux aliases
+alias tn='tmux new-session -s'
+alias ta='tmux attach-session -t'
+alias tr='tmux rename-session -t'
+alias tl='tmux list-sessions'
+alias tk='tmux kill-session -t'
+alias tka'tmux kill-server'
+
+# System aliases
+alias service='sudo service'
+alias start='sudo systemctl start'
+alias reload='sudo systemctl reload'
+alias restart='sudo systemctl restart'
+alias stop='sudo systemctl stop'
+
+# Miscellaneous aliases
+alias root='sudo -i'
+alias fuck='sudo'
+alias fucking='sudo'
+alias c='clear'
