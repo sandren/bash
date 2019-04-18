@@ -12,7 +12,7 @@ alias ll='ls -hFAl --color=auto --group-directories-first'
 
 # Apt aliases
 alias update='sudo apt update && sudo apt upgrade -y'
-alias autoremove='sudo apt autoremove --purge -y"
+alias autoremove='sudo apt autoremove --purge -y'
 
 # Program aliases
 alias n='nano'
@@ -44,7 +44,6 @@ alias ta='tmux attach-session -t'
 alias tr='tmux rename-session -t'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t'
-alias tka'tmux kill-server'
 
 # System aliases
 alias service='sudo service'
