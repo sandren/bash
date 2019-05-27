@@ -1,4 +1,4 @@
-## START CUSTOM ALIASES
+# START CUSTOM ALIASES
 # A small collection of useful Bash aliases.
 # https://github.com/sandren/bash
 #
@@ -65,4 +65,4 @@ alias fuck='sudo'
 alias fucking='sudo'
 alias c='clear'
 
-## END CUSTOM ALIASES
+# END CUSTOM ALIASES
