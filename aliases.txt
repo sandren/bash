@@ -1,3 +1,8 @@
+## START CUSTOM ALIASES
+# A small collection of useful Bash aliases.
+# https://github.com/sandren/bash
+#
+# To update run: `curl -s https://sandren.com/aliases | bash`
 
 # Directory aliases
 alias ..='cd ..'
@@ -59,3 +64,5 @@ alias root='sudo -i'
 alias fuck='sudo'
 alias fucking='sudo'
 alias c='clear'
+
+## END CUSTOM ALIASES

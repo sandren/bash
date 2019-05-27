@@ -6,6 +6,7 @@
 
 cd ~
 wget -q https://sandren.com/aliases/aliases.txt
+sed -i '/^## START CUSTOM ALIASES/,/^## END CUSTOM ALIASES/d;' ~/.bashrc
 cat aliases.txt >> ~/.bashrc
 rm aliases.txt
 echo " ✅ Bash aliases successfully loaded; type \`exec bash\` to apply changes"
