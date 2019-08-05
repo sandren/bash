@@ -41,7 +41,7 @@ alias checkout='git checkout'
 alias clone='git clone'
 alias commit='git commit -m'
 alias pull='git pull'
-alias push='git push origin master'
+alias push='git push'
 alias reset='git reset'
 alias status='git status'
 
