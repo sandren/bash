@@ -2,7 +2,7 @@
 
 # This script installs a small collection of useful Bash aliases.
 #
-# Quick install: `curl -s https://raw.git.rest/sandren/bash/master/index.txt | bash`
+# Quick install: `curl -s https://raw.git.rest/sandren/bash/master/index.sh | bash`
 
 cd ~
 wget -q https://raw.git.rest/sandren/bash/master/aliases.txt
