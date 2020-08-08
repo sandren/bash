@@ -2,12 +2,13 @@
 # A small collection of useful Bash aliases.
 # https://github.com/sandren/bash
 #
-# To update run: `curl -s https://sandren.com/aliases | bash`
+# To update run: `curl -s https://ghcdn.rawgit.org/sandren/bash/master/index.txt | bash`
 
 # Directory aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias ws='cd /etc/nginx'
 alias wsc='cd /etc/nginx/conf.d'
 alias wr='cd /var/www'
@@ -17,11 +18,13 @@ alias ls='ls -hF --color=auto --group-directories-first'
 alias la='ls -hFA --color=auto --group-directories-first'
 alias ll='ls -hFAl --color=auto --group-directories-first'
 
-# Apt aliases
-alias update='sudo apt update && sudo apt upgrade -y'
-alias autoremove='sudo apt autoremove --purge -y'
+# APT aliases
+alias apt.update='sudo apt update && sudo apt upgrade -y'
+alias apt.clean='sudo apt-get clean && sudo apt update'
+alias apt.autoclean='sudo apt-get autoclean && sudo apt update'
+alias apt.autoremove='sudo apt autoremove --purge -y'
 
-# Program aliases
+# General program aliases
 alias n='nano'
 alias sn='sudo nano'
 alias m='micro'
@@ -34,35 +37,43 @@ alias wget='wget -c'
 alias ping='ping -c 5'
 alias top='htop'
 
-# Git aliases
-alias add='git add .'
-alias branch='git branch'
-alias checkout='git checkout'
-alias clone='git clone'
-alias commit='git commit -m'
-alias pull='git pull'
-alias push='git push'
-alias reset='git reset'
-alias status='git status'
+# Node aliases
+alias npm.list='sudo npm list -g --depth 0'
+alias npm.outdated='npm outdated -g --depth=0'
+alias npm.update='sudo npm update -g'
+alias npm.upgrade='sudo npm upgrade -g'
+alias npm.clean='sudo rm ./node_modules/.cache -R'
+alias npm.fuckit='sudo rm -rf ./node_modules/ && sudo rm package-lock.json && npm install'
+
+# Gatsby aliases
+alias build='gatsby build'
+alias develop='gatsby develop'
 
 # Tmux aliases
 alias tn='tmux new-session -s'
+alias stn='sudo tmux new-session -s'
 alias ta='tmux attach-session -t'
+alias sta='sudo tmux attach-session -t'
 alias tr='tmux rename-session -t'
+alias str='sudo tmux rename-session -t'
 alias tl='tmux list-sessions'
+alias stl='sudo tmux list-sessions'
 alias tk='tmux kill-session -t'
+alias stk='sudo tmux kill-session -t'
 
 # System aliases
-alias service='sudo service'
 alias start='sudo systemctl start'
 alias reload='sudo systemctl reload'
 alias restart='sudo systemctl restart'
 alias stop='sudo systemctl stop'
+alias service='sudo service'
+alias myip='curl ipinfo.io/ip'
 
 # Miscellaneous aliases
 alias root='sudo -i'
 alias fuck='sudo'
 alias fucking='sudo'
 alias c='clear'
+alias bash.edit='sudo nano ~/.bashrc'
 
 # END CUSTOM ALIASES
