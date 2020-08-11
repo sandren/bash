@@ -38,7 +38,7 @@ alias ping='ping -c 5'
 alias top='htop'
 
 # Node aliases
-alias npm.list='sudo npm list -g --depth 0'
+alias npm.list='sudo npm list -g --depth 0 --silent'
 alias npm.outdated='npm outdated -g --depth=0'
 alias npm.update='sudo npm update -g'
 alias npm.upgrade='sudo npm upgrade -g'
