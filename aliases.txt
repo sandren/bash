@@ -1,5 +1,5 @@
 # START CUSTOM ALIASES
-# A small collection of useful Bash aliases.
+# A collection of useful Bash aliases.
 # https://github.com/sandren/bash
 #
 # To update run: `curl -s https://ghcdn.rawgit.org/sandren/bash/master/index.sh | bash`
