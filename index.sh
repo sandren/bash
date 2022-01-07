@@ -2,10 +2,10 @@
 
 # This script installs a small collection of useful Bash aliases.
 #
-# Quick install: `curl -s https://ghcdn.rawgit.org/sandren/bash/master/index.sh | bash`
+# Quick install: `curl -s https://raw.githubusercontent.com/sandren/bash/master/index.sh | bash`
 
 cd ~
-wget -q https://ghcdn.rawgit.org/sandren/bash/master/aliases.txt
+wget -q https://raw.githubusercontent.com/sandren/bash/master/aliases.txt
 sed -i '/^# START CUSTOM ALIASES/,/^# END CUSTOM ALIASES/d;' ~/.bashrc
 cat aliases.txt >> ~/.bashrc
 rm aliases.txt
