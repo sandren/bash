@@ -45,10 +45,6 @@ alias npm.upgrade='sudo npm upgrade -g'
 alias npm.clean='sudo rm ./node_modules/.cache -R'
 alias npm.fuckit='sudo rm -rf ./node_modules/ && sudo rm package-lock.json && npm install'
 
-# Gatsby aliases
-alias build='gatsby build'
-alias develop='gatsby develop'
-
 # Tmux aliases
 alias tn='tmux new-session -s'
 alias stn='sudo tmux new-session -s'
