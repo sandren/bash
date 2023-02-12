@@ -2,7 +2,7 @@
 # A collection of useful Bash aliases.
 # https://github.com/sandren/bash
 #
-# To update run: `curl -s https://ghcdn.rawgit.org/sandren/bash/master/index.sh | bash`
+# To update run: `curl -s https://sandren.com/bash.sh | bash`
 
 # Directory aliases
 alias ..='cd ..'
