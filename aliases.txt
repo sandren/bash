@@ -4,7 +4,7 @@
 #
 # To update run: `curl -s https://sandren.com/bash.sh | bash`
 
-# Directory aliases
+# Directories
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -18,13 +18,17 @@ alias ls='ls -hF --color=auto --group-directories-first'
 alias la='ls -hFA --color=auto --group-directories-first'
 alias ll='ls -hFAl --color=auto --group-directories-first'
 
-# APT aliases
+# Packages
 alias apt.update='sudo apt update && sudo apt upgrade -y'
 alias apt.clean='sudo apt-get clean && sudo apt update'
 alias apt.autoclean='sudo apt-get autoclean && sudo apt update'
 alias apt.autoremove='sudo apt autoremove --purge -y'
 
-# General program aliases
+# Programs
+alias y='yarn'
+alias p='pnpm'
+alias d='deno run --allow-env --allow-net --allow-read --allow-write'
+alias b='bun run'
 alias n='nano'
 alias sn='sudo nano'
 alias m='micro'
@@ -37,7 +41,7 @@ alias wget='wget -c'
 alias ping='ping -c 5'
 alias top='htop'
 
-# Node aliases
+# Node
 alias npm.list='sudo npm list -g --depth 0 --silent'
 alias npm.outdated='npm outdated -g --depth=0'
 alias npm.update='sudo npm update -g'
@@ -45,7 +49,7 @@ alias npm.upgrade='sudo npm upgrade -g'
 alias npm.clean='sudo rm ./node_modules/.cache -R'
 alias npm.fuckit='sudo rm -rf ./node_modules/ && sudo rm package-lock.json && npm install'
 
-# Tmux aliases
+# Tmux
 alias tn='tmux new-session -s'
 alias stn='sudo tmux new-session -s'
 alias ta='tmux attach-session -t'
@@ -57,7 +61,7 @@ alias stl='sudo tmux list-sessions'
 alias tk='tmux kill-session -t'
 alias stk='sudo tmux kill-session -t'
 
-# System aliases
+# System
 alias start='sudo systemctl start'
 alias reload='sudo systemctl reload'
 alias restart='sudo systemctl restart'
@@ -65,11 +69,14 @@ alias stop='sudo systemctl stop'
 alias service='sudo service'
 alias myip='curl ipinfo.io/ip'
 
-# Miscellaneous aliases
+# Miscellaneous
 alias root='sudo -i'
 alias fuck='sudo'
 alias fucking='sudo'
 alias c='clear'
 alias bash.edit='sudo nano ~/.bashrc'
+
+# Exports
+# export NODE_OPTIONS=--max-old-space-size=XXXX
 
 # END CUSTOM ALIASES
