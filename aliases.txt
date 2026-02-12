@@ -18,6 +18,10 @@ alias ls='ls -hF --color=auto --group-directories-first'
 alias la='ls -hFA --color=auto --group-directories-first'
 alias ll='ls -hFAl --color=auto --group-directories-first'
 
+# Git
+alias git.clean='git branch | grep -vE "^\*|main|master" | xargs -r git branch -D'
+alias git.reset='git checkout master && git reset --hard origin/master && git pull'
+
 # Packages
 alias apt.update='sudo apt update && sudo apt upgrade -y'
 alias apt.clean='sudo apt-get clean && sudo apt update'
@@ -25,10 +29,14 @@ alias apt.autoclean='sudo apt-get autoclean && sudo apt update'
 alias apt.autoremove='sudo apt autoremove --purge -y'
 
 # Programs
-alias y='yarn'
-alias p='pnpm'
-alias d='deno run --allow-env --allow-net --allow-read --allow-write'
 alias b='bun run'
+alias bup='bun update --latest --interactive'
+alias bus='bun update --interactive'
+alias d='deno run --allow-env --allow-net --allow-read --allow-write'
+alias p='pnpm'
+alias y='yarn'
+alias yup='yarn upgrade-interactive --latest'
+alias yus='yarn upgrade-interactive --latest'
 alias n='nano'
 alias sn='sudo nano'
 alias m='micro'
