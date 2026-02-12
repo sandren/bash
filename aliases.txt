@@ -20,7 +20,7 @@ alias ll='ls -hFAl --color=auto --group-directories-first'
 
 # Git
 alias git.clean='git branch | grep -vE "^\*|main|master" | xargs -r git branch -D'
-alias git.reset='git checkout master && git reset --hard origin/master && git pull'
+alias git.reset='b=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed "s@^refs/remotes/origin/@@"); git checkout "${b:-main}" && git reset --hard "origin/${b:-main}" && git pull'
 
 # Packages
 alias apt.update='sudo apt update && sudo apt upgrade -y'
