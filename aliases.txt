@@ -76,6 +76,8 @@ alias restart='sudo systemctl restart'
 alias stop='sudo systemctl stop'
 alias service='sudo service'
 alias myip='curl ipinfo.io/ip'
+alias df='df -h'
+alias du='du -sh'
 
 # Miscellaneous
 alias root='sudo -i'
@@ -83,6 +85,7 @@ alias fuck='sudo'
 alias fucking='sudo'
 alias c='clear'
 alias bash.edit='sudo nano ~/.bashrc'
+alias bash.reload='source ~/.bashrc'
 
 # Exports
 # export NODE_OPTIONS=--max-old-space-size=XXXX
